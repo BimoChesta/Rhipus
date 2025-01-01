@@ -40,7 +40,11 @@
                     <label for="judul" class="form-label fw-bold">Judul*</label>
                     <input type="text" class="form-control small" id="judul" name="judul"
                         value="{{ old('judul') }}" placeholder="Tambahkan Judul Video"
+<<<<<<< HEAD
                         maxlength="50"></input>
+=======
+                        maxlength="100"></input>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
                     @error('judul')
                         <small class="text-danger my-1">{{ $message }}</small>

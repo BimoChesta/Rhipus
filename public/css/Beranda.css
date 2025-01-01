@@ -1,10 +1,18 @@
 /* MAIN */
 .semua {
+<<<<<<< HEAD
   background-color:rgb(29, 123, 142)
 }
 /* Header container */
 header {
     background-color:rgb(29, 123, 142);/* Light blue background */
+=======
+  background-color: #D7D0D0;
+}
+/* Header container */
+header {
+    background-color:  #b0cbdc;/* Light blue background */
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\modelDetailTransaksi;
 use App\Models\product;
 use App\Models\tblCart;
@@ -261,4 +262,14 @@ class Controller extends BaseController
         Alert::toast('Kamu berhasil Logout', 'success');
         return redirect('admin');
     }
+=======
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Routing\Controller as BaseController;
+
+class Controller extends BaseController
+{
+    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 }

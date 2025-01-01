@@ -14,7 +14,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
+<<<<<<< HEAD
                                     Hiasan
+=======
+                                    Kerajinan tangan
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                 </button>
                         </h5>
                             <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -42,7 +46,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
+<<<<<<< HEAD
                                     Aksesoris
+=======
+                                    Rumah tangga
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                 </button>
                             </h5>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -74,7 +82,11 @@
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#flush-collapseThree" aria-expanded="false"
                                     aria-controls="flush-collapseThree">
+<<<<<<< HEAD
                                     Rumah tangga
+=======
+                                    Sampah sayur
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                 </button>
                             </h2>
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -85,17 +97,29 @@
                                             <div class="d-flex flex-row gap-3">
                                                 <input type="checkbox" name="kategory" class="kategory"
                                                     value="celana anak-anak">
+<<<<<<< HEAD
                                                 <span>Ember</span>
+=======
+                                                <span>Celana Anak-anak</span>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                             </div>
                                             <div class="d-flex flex-row gap-3">
                                                 <input type="checkbox" name="kategory" class="kategory"
                                                     value="baju anak-anak">
+<<<<<<< HEAD
                                                 <span>Sapu</span>
+=======
+                                                <span>Baju Anak-anak</span>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                             </div>
                                             <div class="d-flex flex-row gap-3">
                                                 <input type="checkbox" name="kategory" class="kategory"
                                                     value="aksesoris anak-anak">
+<<<<<<< HEAD
                                                 <span>Tupperware</span>
+=======
+                                                <span>Aksesoris Anak-anak</span>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                             </div>
                                         </div>
                                     </div>

@@ -89,6 +89,7 @@
                 <div class="d-flex align-items-start gap-2">
                     {{-- <a onclick="history.back()"><i class="fa-solid fa-circle-chevron-left fs-4 mt-3 ms-4 col-6" style="color:  #b0cbdc;"></i></a> --}}
                     <div>
+<<<<<<< HEAD
                         <img src="{{auth()->user()->avatar ? asset(auth()->user()->avatar) : '/img/user-avatar.png' }}" alt="Profile" class="rounded-circle me-3 mb-1" width="60" height="60">
 
                         <a href="/unggah">
@@ -104,6 +105,11 @@
                             Edit Profil
                         </a>
 
+=======
+                        <a onclick="history.back()"><i class="fa-solid fa-circle-chevron-left fs-4 mt-3" style="color:  #b0cbdc;"></i></a>
+                        <img src="{{auth()->user()->avatar ? asset(auth()->user()->avatar) : '/img/user-avatar.png' }}" alt="Profile" class="rounded-circle me-3 mb-1" width="60" height="60">
+
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                         @if (Auth::check())
                         <section class="mb-0 fw-bold">{{ Auth::user()->username }}</section>
                         @endif
@@ -117,6 +123,7 @@
             </section>
 
             <section id="my-videos" class="mt-3">
+<<<<<<< HEAD
                 <h5 class="fw-bold active-line d-inline-block mb-2 mt-2">Video Saya</h5>
                 <div class="row g-5">
                     @foreach ($videos as $v)
@@ -136,6 +143,28 @@
 
                 </div>
             </section>
+=======
+                <h5 class="fw-bold active-line d-inline-block mb-2 mt-2">Video</h5>
+                <div class="row g-5">
+                   {{--  @foreach ($videos as $video)
+                        <a href="/video/{{ $video->id }}" class="col-4 image-card py-4">
+                            <img src="{{ asset($video->thumbnail) }}" alt="{{ $video->thumbnail }}" class="img-fluid rounded-2">
+                            <img src="../storage/" alt="">
+                            <div class="d-flex align-items-center gap-2 mt-2 mb-0">
+                                <img src="{{ $video->user->avatar ? $video->user->avatar : '/img/user-avatar.png' }}" alt="Profile" class="rounded-circle" width="40" height="40">
+                                <div>
+                                    <p class="fw-bold m-0 mt-0">{{ $video->judul }}</p>
+                                    <small class="text-secondary fw-bold d-block">{{ $video->user->username }}</small>
+                                    {{-- <small class="single-line-text d-block w-100">{{ $video->deskripsi }}</small> --}}
+                                    {{-- <small id="viewCount" class="mb-0 fw-bold-secondary">{{ $video->view_count ?? 0 }}x ditonton</small>
+                                    <small class="text-muted">{{ $video->created_at->diffForHumans() }}</small>
+                                </div>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            </section> --}}
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
 
         </div>

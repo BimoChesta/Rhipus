@@ -8,6 +8,7 @@ return new class extends Migration
 {
     /**
      * Run the migrations.
+<<<<<<< HEAD
      */
     public function up(): void
     {
@@ -28,13 +29,38 @@ return new class extends Migration
             $table->integer('role');
             $table->rememberToken();
             $table->timestamps();
+=======
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
+            $table->string('username');
+            $table->string('avatar')->nullable();
+            $table->string('bio')->nullable();
+            $table->string('email')->unique()->nullable();
+            $table->timestamp('email_verified_at')->nullable();
+            $table->string('password');
+            $table->rememberToken();
+            $table->timestamps();
+            $table->softDeletes(); // Tambahkan kolom untuk soft delete
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         });
     }
 
     /**
      * Reverse the migrations.
+<<<<<<< HEAD
      */
     public function down(): void
+=======
+     *
+     * @return void
+     */
+    public function down()
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     {
         Schema::dropIfExists('users');
     }

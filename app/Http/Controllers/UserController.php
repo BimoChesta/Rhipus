@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Http\Requests\UserRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -169,5 +170,16 @@ class UserController extends Controller
         request()->session()->regenerateToken();
         Alert::toast('Kamu berhasil Logout', 'success');
         return redirect('/');
+=======
+use Illuminate\Http\Request;
+use App\Models\User;
+
+class UserController extends Controller
+{
+    public function show($id)
+    {
+        $user = User::findOrFail($id);
+        return view('profilVideo', compact('user'));
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     }
 }

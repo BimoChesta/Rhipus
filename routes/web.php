@@ -1,5 +1,6 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\TransaksiAdminController;
@@ -12,6 +13,21 @@ use App\Http\Controllers\BerandaController;
 // use App\Http\Middleware\AuthMiddleware;
 use Illuminate\Support\Facades\Route;
 
+=======
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\VideoController;
+use App\Http\Controllers\DaftarController;
+use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\PengaturanController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TransaksiAdminController;
+use App\Http\Controllers\TransaksiController;
+use App\Http\Middleware\AuthMiddleware;
+use App\Models\User;
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +35,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
+<<<<<<< HEAD
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
@@ -26,6 +43,29 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
     Route::get('/', [VideoController::class, 'index'])->name('beranda');
+=======
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
+
+// Authentication Routes
+Route::get('/login', [loginController::class, 'index'])->name('login');
+Route::post('/login', [loginController::class, 'login'])->name('login');
+
+Route::get('/daftar', [daftarController::class, 'index'])->name('showDaftarForm');
+Route::post('/daftar', [daftarController::class, 'register'])->name('daftar');
+
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+// Registration Routes
+// Route::get('/daftar', [DaftarController::class, 'index'])->name('register.index');
+// Route::post('/daftar', [DaftarController::class, 'register'])->name('register.store');
+
+// Authenticated Routes
+Route::middleware(AuthMiddleware::class)->group(function () {
+    Route::get('/', [videoController::class, 'index'])->name('beranda');
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
     // Video Routes
     Route::prefix('video')->name('video.')->group(function () {
@@ -43,6 +83,7 @@ Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
         Route::get('/', [ProfilController::class, 'index'])->name('index');
         Route::get('/create', [ProfilController::class, 'create'])->name('create');
         Route::post('/', [ProfilController::class, 'store'])->name('store');
+<<<<<<< HEAD
         Route::get('/edit', [ProfilController::class, 'show'])->name('edit'); // Ganti 'edit' dengan 'show'
         Route::put('/update', [ProfilController::class, 'update'])->name('update'); // Ubah dari 'post' ke 'put'
         Route::get('/{id}', [ProfilController::class, 'show'])->name('show');
@@ -50,12 +91,23 @@ Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
     // User Profile Video Routes
     Route::prefix('profilVideo')->name('user.profile.')->group(function () {
         Route::get('/{id}', [userController::class, 'show'])->name('show');
+=======
+        Route::get('/edit', [ProfilController::class, 'edit'])->name('edit');
+        Route::post('/update', [ProfilController::class, 'update'])->name('update');
+        Route::get('/{id}', [ProfilController::class, 'show'])->name('show');
+    });
+
+    // User Profile Video Routes
+    Route::prefix('profilVideo')->name('user.profile.')->group(function () {
+        Route::get('/{id}', [UserController::class, 'show'])->name('show');
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         Route::get('/{id}/view', function ($id) {
             $user = User::findOrFail($id);
             return view('profilVideo', compact('user'));
         })->name('view');
     });
 
+<<<<<<< HEAD
     Route::get('/video', [VideoController::class, 'index'])->name('video');
     Route::get('/video/{id}', [VideoController::class, 'show'])->name('videoShow');
     Route::get('/unggah', [VideoController::class, 'unggah'])->name('video');
@@ -86,6 +138,24 @@ Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
     Route::delete('/deleteAkun', [PengaturanController::class, 'delete'])->name('deleteAccount');
 
 Route::get('/', [TransaksiController::class, 'index'])->name('home');
+=======
+    Route::get('/video', [videoController::class, 'index'])->name('video');
+    Route::get('/video/{id}', [videoController::class, 'show'])->name('video.show');
+    Route::get('/unggah', [videoController::class, 'unggah'])->name('video');
+    Route::post('/unggah', [videoController::class, 'unggahVideo'])->name('video.store');
+    Route::get('/video/create', [videoController::class, 'create']);
+    Route::post('/video', [videoController::class, 'store']);
+    Route::post('/video/{id}/view', [VideoController::class, 'incrementViewCount']);
+
+    Route::get('/profil', [profilController::class, 'index'])->name('profil');
+    Route::get('/profil/create', [profilController::class, 'create']);
+    Route::post('/profil', [profilController::class, 'store']);
+    Route::get('/editProfil', [profilController::class, 'show'])->name('profile.show');
+    Route::post('/profile', [profilController::class, 'update'])->name('profile.update');
+
+    // Bank Sampah Routes
+    Route::get('/', [TransaksiController::class, 'index'])->name('home');
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 Route::POST('/addTocart', [TransaksiController::class, 'addTocart'])->name('addTocart');
 Route::POST('/storePelanggan', [UserController::class, 'storePelanggan'])->name('storePelanggan');
 Route::POST('/login_pelanggan', [UserController::class, 'loginProses'])->name('loginproses.pelanggan');
@@ -126,4 +196,23 @@ Route::group(['middleware' => 'admin'], function () {
     Route::DELETE('/admin/deleteData/{id}', [ProductController::class, 'destroy'])->name('deleteData');
 
     Route::GET('/admin/transaksi', [TransaksiAdminController::class, 'index'])->name('transaksi.admin');
+<<<<<<< HEAD
+=======
+});
+
+    // Settings Routes
+    Route::prefix('pengaturan')->name('settings.')->group(function () {
+        Route::get('/', [PengaturanController::class, 'index'])->name('index');
+        Route::delete('/deleteAkun', [PengaturanController::class, 'delete'])->name('delete');
+    });
+
+    // Owner-specific Routes
+    Route::middleware('owner')->group(function () {
+        Route::get('/profil/edit', [ProfilController::class, 'edit'])->name('profile.owner.edit');
+        Route::get('/video/create', [VideoController::class, 'create'])->name('video.owner.create');
+    });
+
+    Route::get('/pengaturan', [pengaturanController::class, 'index'])->name('pengaturan');
+    Route::delete('/deleteAkun', [pengaturanController::class, 'delete'])->name('deleteAccount');
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 });

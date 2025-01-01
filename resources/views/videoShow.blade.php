@@ -85,8 +85,15 @@
 
                 <hr>
                 <div class="d-flex align-items-center gap-1 mt-2">
+<<<<<<< HEAD
                     <a href="{{ route('user.profile.show', ['id' => $user->id]) }}">
                     <img src="{{ asset($video->user->avatar ?? '/img/user-avatar.png') }}"
+=======
+                    <a href="{{ route('user.profile.show', ['id' => $user->id]) }}"></a>
+
+
+                    <img src="{{ $video->user->avatar ? $video->user->avatar : '/img/user-avatar.png' }}"
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                     alt="Profile" class="rounded-circle" width="30" height="30"></a>
                 <small class="text-secondary fw-bold d-block">{{ $video->user->username }}</small>
               </div>
@@ -96,8 +103,13 @@
 
           {{-- video lainnya --}}
           <hr>
+<<<<<<< HEAD
           <div class="row g-5 ">
             {{-- @foreach ($video as $v)
+=======
+          {{-- <div class="row g-5 ">
+            @foreach ($videos as $video)
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                 <a href="/video/{{ $video->id }}" class="col-4 image-card py-4">
                     <img src="{{ asset($video->thumbnail) }}" alt="{{ $video->thumbnail }}" class="img-fluid rounded-2">
                     <img src="../storage/" alt="">
@@ -107,6 +119,7 @@
                             <p class="fw-bold m-0 mt-0">{{ $video->judul }}</p>
                             <small class="text-secondary fw-bold d-block">{{ $video->user->username }}</small>
                             {{-- <small class="single-line-text d-block w-100">{{ $video->deskripsi }}</small> --}}
+<<<<<<< HEAD
                              {{-- <small class="text-muted">{{ $video->created_at->diffForHumans() }}</small>
                         </div>
                     </div>
@@ -138,6 +151,14 @@
 
 
         </div>
+=======
+                            {{-- <small class="text-muted">{{ $video->created_at->diffForHumans() }}</small>
+                        </div>
+                    </div>
+                </a>
+            @endforeach
+        </div> --}}
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
     </main>
     <footer class="py-5 mt-5 fixed top-0 w-full z-10">

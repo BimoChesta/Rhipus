@@ -7,9 +7,14 @@
                rhipus
             </div>
         </div>
+<<<<<<< HEAD
         <div class="d-flex justify-content-end">
         <div class="col-md-5">
             <img src="{{ asset('/img/logoo.png') }}" style="width:80%" alt="">
+=======
+        <div class="col-md-6">
+            <img src="{{ asset('assets/images/office-2.png') }}" style="width:100%" alt="">
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         </div>
     </div>
 
@@ -29,12 +34,21 @@
     </div>
 
     <h4 class="text-center mt-md-5 mb-md-2">Contact Us</h4>
+<<<<<<< HEAD
     <hr class="mb-51">
     <!-- <div class="row  mb-md-5">
         <div class="col-md-5">
             <div class="bg-secondary" style="width: 100%; height:50vh; border-radius:10px;"></div> -->
         </div>
         <div class="col-md-100">
+=======
+    <hr class="mb-5">
+    <div class="row  mb-md-5">
+        <div class="col-md-5">
+            <div class="bg-secondary" style="width: 100%; height:50vh; border-radius:10px;"></div>
+        </div>
+        <div class="col-md-7">
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
             <div class="card">
                 <div class="card-header text-center">
                     <h4>Kritik dan saran</h4>

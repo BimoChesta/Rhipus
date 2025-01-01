@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+<<<<<<< HEAD
 use App\Models\Beranda;
+=======
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 use App\Models\Video;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -20,15 +23,24 @@ class profilController extends Controller
 
     public function show()
     {
+<<<<<<< HEAD
         $user = Beranda::where('user_id', Auth::id())->first(); // Mengambil data pengguna dari tabel beranda
         return view('editProfil', ['user' => $user]);
+=======
+        return view('editProfil', ['user' => Auth::user()]);
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     }
 
 
 public function update(Request $request)
 {
+<<<<<<< HEAD
     // Mengambil data pengguna dari tabel beranda
     $user = Beranda::where('user_id', Auth::id())->first(); // Mengambil data pengguna dari tabel beranda
+=======
+    // Mengambil data pengguna yang sedang login berdasarkan ID
+    $user = User::find(Auth::id());  // Lebih eksplisit menggunakan find()
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
     // Pastikan pengguna ditemukan
     if (!$user) {
@@ -62,6 +74,10 @@ public function update(Request $request)
         $avatarPath = 'storage/avatar/' . $avatar->getClientOriginalName(); // Nama file unik
         $avatar->move(public_path('storage/avatar'), $avatar->getClientOriginalName()); // Pindahkan file ke folder public/storage/avatar
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         // Simpan nama file di database
         $user->avatar = $avatarPath;
     }
@@ -73,4 +89,9 @@ public function update(Request $request)
     return redirect()->route('profile.show')->with('success', 'Profil berhasil diperbarui');
 }
 
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a

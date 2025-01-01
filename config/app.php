@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Facade;
+<<<<<<< HEAD
 use Illuminate\Support\ServiceProvider;
+=======
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
 return [
 
@@ -70,7 +73,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'timezone' => 'Asia/Jakarta',
+=======
+    'timezone' => 'UTC',
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
     /*
     |--------------------------------------------------------------------------
@@ -155,7 +162,38 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'providers' => ServiceProvider::defaultProviders()->merge([
+=======
+    'providers' => [
+
+        /*
+         * Laravel Framework Service Providers...
+         */
+        Illuminate\Auth\AuthServiceProvider::class,
+        Illuminate\Broadcasting\BroadcastServiceProvider::class,
+        Illuminate\Bus\BusServiceProvider::class,
+        Illuminate\Cache\CacheServiceProvider::class,
+        Illuminate\Foundation\Providers\ConsoleSupportServiceProvider::class,
+        Illuminate\Cookie\CookieServiceProvider::class,
+        Illuminate\Database\DatabaseServiceProvider::class,
+        Illuminate\Encryption\EncryptionServiceProvider::class,
+        Illuminate\Filesystem\FilesystemServiceProvider::class,
+        Illuminate\Foundation\Providers\FoundationServiceProvider::class,
+        Illuminate\Hashing\HashServiceProvider::class,
+        Illuminate\Mail\MailServiceProvider::class,
+        Illuminate\Notifications\NotificationServiceProvider::class,
+        Illuminate\Pagination\PaginationServiceProvider::class,
+        Illuminate\Pipeline\PipelineServiceProvider::class,
+        Illuminate\Queue\QueueServiceProvider::class,
+        Illuminate\Redis\RedisServiceProvider::class,
+        Illuminate\Auth\Passwords\PasswordResetServiceProvider::class,
+        Illuminate\Session\SessionServiceProvider::class,
+        Illuminate\Translation\TranslationServiceProvider::class,
+        Illuminate\Validation\ValidationServiceProvider::class,
+        Illuminate\View\ViewServiceProvider::class,
+
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         /*
          * Package Service Providers...
          */
@@ -163,13 +201,21 @@ return [
         /*
          * Application Service Providers...
          */
+<<<<<<< HEAD
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+=======
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+<<<<<<< HEAD
     ])->toArray(),
+=======
+
+    ],
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
     /*
     |--------------------------------------------------------------------------
@@ -183,8 +229,12 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
+<<<<<<< HEAD
         // 'Example' => App\Facades\Example::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+=======
+        // 'ExampleClass' => App\Example\ExampleClass::class,
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     ])->toArray(),
 
 ];

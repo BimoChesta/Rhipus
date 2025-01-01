@@ -46,6 +46,7 @@ class videoController extends Controller
     }
 
     public function show($id)
+<<<<<<< HEAD
     {
         // Temukan video yang sedang diputar berdasarkan ID
         $video = Video::find($id);
@@ -63,6 +64,18 @@ class videoController extends Controller
         return view('videoShow', compact('video', 'user', 'otherVideos'));
     }
 
+=======
+{
+    $video = Video::find($id);
+    $user = User::find($video->user_id);
+
+    if (!$video) {
+        return redirect()->route('videos.index')->with('error', 'Video tidak ditemukan.');
+    }
+    return view('videoShow', compact('video', 'user'));
+
+}
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
 
     public function yourMethod(Request $request){
@@ -81,6 +94,7 @@ class videoController extends Controller
     return response()->json(['view_count' => $video->view_count]);
 }
 
+<<<<<<< HEAD
 public function showRecommendations()
 {
     // Mengambil video dari database
@@ -91,6 +105,8 @@ public function showRecommendations()
 }
 
 
+=======
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
 
     public function unggah()

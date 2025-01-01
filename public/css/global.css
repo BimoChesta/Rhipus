@@ -4,8 +4,13 @@
 
 :root {
   --primary: #00476F;
+<<<<<<< HEAD
   --background :rgb(56, 143, 161);
   --light-primary: #3e9fac;
+=======
+  --background : #b0cbdc;
+  --light-primary: #7AEFFF;
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
   --secondary: #9EBFCB;
   --text: #1E1E1E;
   --mute: #999999;
@@ -101,11 +106,19 @@ a {
 
 /* HEADER */
 .navbar {
+<<<<<<< HEAD
   background-color:rgb(29, 123, 142)
 }
 
 .navbar .active {
   background-color:rgb(29, 123, 142)
+=======
+  background-color: #9EBFCB;
+}
+
+.navbar .active {
+  border-bottom: 3px solid #168493;
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 }
 
 .navbar #profileBtn {
@@ -160,5 +173,9 @@ a {
 
 /* FOOTER */
 footer {
+<<<<<<< HEAD
   background-color:rgb(29, 123, 142)
+=======
+  background-color: #4e8ca2;
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 }

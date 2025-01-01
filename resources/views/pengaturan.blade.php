@@ -24,7 +24,11 @@
             <div class="logo col-4 d-flex justify-content-start align-items-center">
                 <img src="/img/logoo.png" alt="logoProfil" width="70">
             </div>
+<<<<<<< HEAD
             <div class="col-4 d-flex justify-content-center align-items-center"><a href="/beranda">Beranda</a></div>
+=======
+            <div class="col-4 d-flex justify-content-center align-items-center"><a href="/">Beranda</a></div>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
             @auth
                 <div class="col-4 d-flex justify-content-end align-items-center">
                     <a class="btn dropdown-toggle" href="#" role="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,11 +51,19 @@
 
                 </div>
             @else
+<<<<<<< HEAD
                 <!-- <div class="col-4 d-flex justify-content-end align-items-center">
                     <button>
                         <a href="/login" class="bg-primary px-4 py-2 rounded text-white">Login</a>
                     </button>
                 </div> -->
+=======
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <button>
+                        <a href="/login" class="bg-primary px-4 py-2 rounded text-white">Login</a>
+                    </button>
+                </div>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
             @endauth
         </div>
     </div>

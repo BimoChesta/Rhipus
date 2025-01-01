@@ -34,6 +34,7 @@
                 <div class="logo col-4 d-flex justify-content-start align-items-center">
                     <img src="/img/logoo.png" alt="logoProfil" width="70">
                 </div>
+<<<<<<< HEAD
                 <div class="col-2 d-flex align-items-center"><a href="/shop">Toko Rhipus</a></div>
                 <div class="col-4 d-flex justify-content-center align-items-center"><a href="/beranda">Beranda</a></div>
                 @auth
@@ -42,6 +43,15 @@
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <!-- <img src="{{ auth()->user()->avatar ? asset(auth()->user()->avatar) : '/img/user-avatar.png' }}"
                             alt="Profile" class="rounded-circle" width="30" height="30"> -->
+=======
+                <div class="col-4 d-flex justify-content-center align-items-center"><a href="/">Beranda</a></div>
+                @auth
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="profileDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="{{ auth()->user()->avatar ? asset(auth()->user()->avatar) : '/img/user-avatar.png' }}"
+                            alt="Profile" class="rounded-circle" width="30" height="30">
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                         </a>
 
                         @if (Auth::check())
@@ -51,12 +61,20 @@
                         <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="profileDropdown">
                             <li><a class="dropdown-item btn btn-secondary-20" href="/profil">Profile</a></li>
                             <li><a class="dropdown-item btn btn-secondary-20" href="/pengaturan">pengaturan</a></li>
+<<<<<<< HEAD
                             <!-- <li>
+=======
+                            <li>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
                                 <form method="POST" action="{{ route('logout') }}" class="class="ms-2">
                                     @csrf
                                     <button type="submit" class="btn btn-danger px-3 py-1 dropdown-item">Logout</button>
                                 </form>
+<<<<<<< HEAD
                             </li> -->
+=======
+                            </li>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 
                         </ul>
 

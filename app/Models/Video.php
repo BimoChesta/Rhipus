@@ -27,7 +27,13 @@ class Video extends Model
 
     public function user()
     {
+<<<<<<< HEAD
         return $this->belongsTo(User::class, 'user_id');
     }
 
+=======
+        return $this->belongsTo(User::class);
+    }
+    
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 }

@@ -1,6 +1,7 @@
 <div class="d-flex justify-content-between gap-5 pt-4 mt-5">
     <div class="title-left w-25">
         <div class="header-title fs-4 mb-2 font-weight-bolder">
+<<<<<<< HEAD
           Toko Rhipus
         </div>
         <p>Pada situs web ini kami akan berbagi pengguna membeli barang dari pengelolahan sampah yang
@@ -9,6 +10,13 @@
                         kembali, untuk
                         menjadi hiasan ataupun kerajinan bertujuan mengurangi pencemaran sampah di indonesia dan
                         menyelamatkan bumi..</p>
+=======
+            TOKO ONLINE KITA
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus repudiandae optio a illo
+            accusantium deserunt officiis distinctio suscipit ut eveniet, deleniti non aut eaque, ipsum
+            quaerat, natus nisi asperiores amet.</p>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
     </div>
     <div class="title-middle w-25">
         <div class="header-title fs-4 mb-2 font-weight-bolder">
@@ -17,6 +25,7 @@
         <ul class="list-unstyled">
             <li>
                 <p>
+<<<<<<< HEAD
                 Kami adalah team PANDAWARA yang terdiri dari Bimo, Cabila dan Vani
                 </p>
             </li>
@@ -25,6 +34,18 @@
             </li>
             <small class="text-white-50">Indonesia</small>
             <p class="m-0 text-white">Jawa Barat, Bandung</p>
+=======
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dignissimos quasi
+                    nobis autem explicabo! Voluptas!
+                </p>
+            </li>
+            <li>
+                <p>091231231232</p>
+            </li>
+            <li>
+                p2312321312313
+            </li>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
         </ul>
     </div>
     <div class="title-sosmed w-30">
@@ -40,5 +61,9 @@
     </div>
 </div>
 <div class="text-center p-lg-4 mt-3">
+<<<<<<< HEAD
     Copy right @ PANDAWARA 2024</i>
+=======
+    Copy right @ StudyKuy 2023</i>
+>>>>>>> b32844b544a6c3e6a9bc6819f994b9ff5bbaf64a
 </div>
