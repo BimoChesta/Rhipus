@@ -1,0 +1,27 @@
+.custom-card {
+     /* Warna border */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Padding dalam card */
+    background-color: #f8f9fa; /* Warna latar belakang */
+    margin-bottom: 20px; /* Jarak bawah card */
+}
+.custom-button {
+    padding: 0.5rem 1rem; /* Padding tombol */
+    background-color: #A3C1DA; /* Warna tombol */
+    border: none; /* Tanpa border */
+    border-radius: 20px; /* Sudut melengkung tombol */
+    color: #fff; /* Warna teks */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+.custom-button:hover {
+    background-color: #7BA3C1; /* Warna saat hover */
+}
+.custom-button {
+    white-space: nowrap; /* Mencegah teks terpotong */
+    }
+    .link-toko {
+        max-width: 120px; /* Mengatur lebar maksimum */
+        overflow: hidden; /* Mencegah overflow */
+        white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+        text-overflow: ellipsis; /* Menampilkan elipsis jika teks terlalu panjang */
+    }

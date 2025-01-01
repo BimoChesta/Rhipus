@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+:root {
+  --primary: #00476F;
+  --background :rgb(56, 143, 161);
+  --light-primary: #3e9fac;
+  --secondary: #9EBFCB;
+  --text: #1E1E1E;
+  --mute: #999999;
+}
+
+/* Reset dan gaya dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  min-height: 60vh;
+}
+
+.single-line-text {
+  white-space: nowrap;          /* Mencegah teks membungkus ke baris baru */
+  overflow: hidden;             /* Menyembunyikan teks yang melebihi lebar elemen */
+  text-overflow: ellipsis;      /* Menambahkan elipsis (...) pada teks yang terpotong */
+  /* width: 200px;                 Tentukan lebar elemen sesuai kebutuhan */
+}
+
+.not-found {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.color-light-primary {
+  color: var(--light-primary);
+}
+
+.button-secondary {
+  background-color: var(--secondary);
+}
+
+.button-secondary-80 {
+  background-color: rgba(158, 191, 203, 0.8);
+}
+
+.button-secondary-80:hover {
+  background-color: rgba(158, 191, 203, 1);
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-background {
+  background-color: var(--background) !important;
+}
+
+.bg-primary-80 {
+  background-color: rgba(0, 71, 111, 0.8);
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-secondary-80 {
+  background-color: rgba(158, 191, 203, 0.8);
+}
+
+.bg-white-50 {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.max-h-100 {
+  max-height: 100%;
+}
+
+.active-line::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary);
+  margin-top: .5rem;
+  border-radius: 20px;
+}
+
+/* HEADER */
+.navbar {
+  background-color:rgb(29, 123, 142)
+}
+
+.navbar .active {
+  background-color:rgb(29, 123, 142)
+}
+
+.navbar #profileBtn {
+  cursor: pointer;
+}
+
+.profil {
+  width: 45px;
+  height: 45px;
+}
+
+.floating-menu {
+  transform: scale(0);
+  transform-origin: 20% 20%;
+  z-index: 2000;
+  transition: .2s;
+}
+
+.back-layer {
+  z-index: 1999;
+  height: 100vh;
+  width: 100vw;
+  transform: scale(0);
+}
+
+.back-layer.show {
+  transform: scale(1);
+}
+
+.floating-menu.show {
+  transform: scale(1);
+}
+
+.search-container input {
+  background-color: #D7D0D0;
+}
+
+.thumbnail {
+  width: 100%;
+  /* max-width: 600px; */
+  /* Sesuaikan dengan lebar maksimal container */
+  aspect-ratio: 16 / 9;
+  /* Tentukan aspek rasio yang diinginkan */
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color:rgb(29, 123, 142)
+}
